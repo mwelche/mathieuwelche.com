@@ -113,8 +113,32 @@ body {
 	margin-left:-40px;
 	margin-top:-30px;
 }
-.resume .skills a:hover {
-	text-decoration:underline;
+.resume .skills li {
+	display:inline-block;
+	padding:.4rem;
+	border-radius:2px;
+	color:#888;
+	font-size:.8rem;
+	background-color:rgba(0,0,0,.1);
+	white-space:nowrap;
+}
+.resume .skills li {
+	margin-right:.5rem;
+	margin-bottom:.5rem;
+}
+.resume .skills li a {
+	color:#888;
+}
+.resume .skills li a:hover {
+	color:#555;
+}
+.resume .skills li.add-skill {
+	padding: 0;
+}
+.resume .skills li.add-skill a {
+	padding:.4rem .5rem;
+	display:block;
+	font-weight:bold;
 }
 .resume .language .language-item {
 	margin-bottom:1rem;
@@ -142,9 +166,9 @@ body {
 .resume .language .language-item button:after {
 	z-index: -1;
 	position:absolute;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	transition: all 0.7s;
+	-webkit-transition: all 0.7s, background 0.2s;
+	-moz-transition: all 0.7s, background 0.2s;
+	transition: all 0.7s, background 0.2s;
 	width: 2%;
 	height: 100%;
 	top: 0;
@@ -183,10 +207,20 @@ body {
 	font-size:.9rem;
 }
 .resume .previous ul {
-	margin-bottom:2rem;
+	margin-bottom:2.5rem;
 }
 .resume .previous ul li {
 	line-height:1.6rem;
+}
+.resume .previous ul li small {
+	display:block;
+	line-height:1.2rem;
+}
+.resume .previous ul li h4 {
+	margin-bottom:.5rem;
+}
+.resume .previous-list {
+	padding-left:1.5rem;
 }
 .resume footer {
 	padding:2rem;
@@ -214,7 +248,7 @@ body {
 	transform:translate(0,-20%);
 }
 .resume footer .ref {
-	font-size: .9rem;
+	font-size: .8rem;
 	margin-top:1.2rem;
 }
 
