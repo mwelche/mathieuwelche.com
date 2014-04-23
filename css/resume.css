@@ -1,20 +1,20 @@
+/**
+* mathieuwelche.com Resume Stylesheet
+* written by: Mathieu Welche;
+**/
+
 body {
 	background-color:#24c5e7;
 	font-size: 110%;
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
-}
-.container > img {
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
+	padding:1rem;
 }
 
 /* -- RESUME -- */
 
 .container.resume {
-	width: 960px;
+	width:100%;
+	max-width: 960px;
 	padding: 4rem;
 	border-radius:2px;
 	box-shadow:0 2px 8px rgba(0,0,0,.15);
@@ -254,6 +254,10 @@ body {
 	margin-top:1.2rem;
 }
 
+@media only screen and (max-width :960px) {
+}
 
+@media only screen and (max-width :800px) {
+}
 
 
