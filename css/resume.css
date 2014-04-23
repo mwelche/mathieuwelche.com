@@ -1,0 +1,259 @@
+body {
+	background-color:#24c5e7;
+	font-size: 110%;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+.container > img {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+/* -- RESUME -- */
+
+.container.resume {
+	width: 960px;
+	padding: 4rem;
+	border-radius:2px;
+	box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.resume {
+	margin: 2rem auto;
+	background-color:#fff;
+	color:#333;
+}
+.resume a {
+	text-decoration:none;
+}
+.resume h2 {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight:lighter;
+	margin-bottom:3rem;
+	letter-spacing:2px;
+}
+.resume h3 {
+	font-weight:bold;
+	margin-bottom:1.5rem;
+	letter-spacing:1px;
+}
+.resume h4 {
+	font-weight:bold;
+}
+.resume header {
+	margin-bottom: 4rem;
+}
+.resume header h1 {
+	font-weight:lighter;
+	text-align:center;
+	font-size:2.4rem;
+	letter-spacing:3px;
+	margin-top:2rem;
+	margin-bottom:1rem;
+	text-transform:uppercase;
+}
+.resume header h5 {
+	margin-bottom:.4rem;
+	text-align:center;
+	font-weight:lighter;
+	letter-spacing:1px;
+	color:#444;
+}
+.resume header h5 a {
+	color:#444;
+}
+.resume header a:hover {
+	text-decoration:underline;
+}
+.resume section {
+	padding: 2rem;
+	color:#555;
+}
+.resume section a {
+	color:#555;
+}
+.resume article {
+	padding: 4rem 0 5rem;
+}
+.resume article p {
+	line-height: 1.8rem;
+	font-size:1rem;
+}
+.resume .education {
+	position:relative;
+}
+.resume .education:hover .ucsd {
+	opacity:.75;
+	-webkit-transform:scale(1,1);
+	-ms-transform:scale(1,1);
+	transform:scale(1,1);
+}
+.resume .education .ucsd {
+	border-radius:100px;
+	overflow:hidden;
+	position:absolute;
+	right: 0;
+	top:-10px;
+	height:160px;
+	width:160px;
+	opacity:0;
+	-webkit-transition:1s;
+	transition:1s;
+	-webkit-transform:scale(.8,.8);
+	-ms-transform:scale(.8,.8);
+	transform:scale(.8,.8);
+}
+.resume .education .ucsd:hover {
+	opacity:1;
+}
+.resume .education .ucsd img {
+	display:block;
+	width:240px;
+	margin-left:-40px;
+	margin-top:-30px;
+}
+.resume .skills li, .resume .skills a {
+	display:inline-block;
+	border-radius:2px;
+	color:#7f8c8d;
+	letter-spacing:1px;
+	font-size:1rem;
+	white-space:nowrap;
+	margin-right:1rem;
+	margin-bottom:1rem;
+	padding:.5rem;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+.resume .skills a:hover {
+	color:#fff;
+	background-color:#34495e;
+}
+.resume .skills li.add-skill {
+	padding: 0;
+}
+.resume .skills li.add-skill a {
+	padding:.4rem .5rem;
+	display:block;
+	font-weight:bold;
+}
+.resume .language .language-item {
+	margin-bottom:1rem;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.resume .language button {
+	-webkit-appearance: none;
+	appearance:none;
+	padding: 1rem 2rem;
+	width: 100%;
+	width:100%;
+	background:none;
+	border:none;
+	position:relative;
+	z-index:10;
+	text-align:left;
+	outline:0;
+}
+.resume .language button b {
+	min-width: 15%;
+	display:inline-block;
+}
+.resume .language .language-item button:after {
+	z-index: -1;
+	position:absolute;
+	-webkit-transition: all 0.7s, background 0.2s;
+	-moz-transition: all 0.7s, background 0.2s;
+	transition: all 0.7s, background 0.2s;
+	width: 2%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.05);
+	content: '';
+}
+.resume .language:hover .language-item button.advanced-expert:after {
+	width: 90%;
+}
+.resume .language:hover .language-item button.advanced:after {
+	width: 75%;
+}
+.resume .language:hover .language-item button.intermediate:after {
+	width: 60%;
+}
+.resume .language:hover .language-item button.novice:after {
+	width: 45%;
+}
+.resume .language .language-item button:hover:after {
+	background:rgba(149, 165, 166,.60);
+}
+.resume .recent {
+	font-size: 1rem;
+}
+.resume .recent ul:not(:last-child) {
+	padding:0 0 2rem;
+}
+.resume .recent ul li {
+	line-height:1.6rem;
+}
+.resume .recent a:hover {
+	text-decoration:underline;
+}
+.resume .previous {
+	font-size:1rem;
+}
+.resume .previous .text {
+	margin-bottom:1rem;
+}
+.resume .previous ul {
+	margin-bottom:2.5rem;
+}
+.resume .previous ul li {
+	line-height:1.6rem;
+}
+.resume .previous ul li small {
+	display:block;
+	line-height:1.2rem;
+}
+.resume .previous ul li h4 {
+	margin-bottom:.5rem;
+}
+.resume .previous-list {
+	padding-left:1.5rem;
+}
+.resume footer {
+	padding:2rem;
+	text-align:center;
+}
+.resume footer ul li {
+	display:inline-block;
+}
+.resume footer ul li a {
+	color:#333;
+	display:block;
+	padding:.5rem;
+	-webkit-transition:1s;
+	transition:1s;
+	-webkit-transition:-webkit-transform .5s;
+	transition:-ms-transform .5s;
+	transition:transform .5s;
+	font-size:1.2rem;
+}
+.resume footer ul li a:hover {
+	text-decoration:none;
+	color:#aaa;
+	-webkit-transform:translate(0,-20%);
+	-ms-transform:translate(0,-20%);
+	transform:translate(0,-20%);
+}
+.resume footer .ref {
+	font-size: .8rem;
+	margin-top:1.2rem;
+}
+
+
+
+
