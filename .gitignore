@@ -4,3 +4,6 @@ css/ss-standard.css
 js/ss-social.js
 js/ss-standard.js
 .DS_Store
+css/.DS_Store
+js/.DS_Store
+fonts/.DS_Store
