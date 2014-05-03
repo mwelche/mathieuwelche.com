@@ -95,7 +95,7 @@ body {
 	overflow:hidden;
 	position:absolute;
 	right: 0;
-	top:-10px;
+	top:40px;
 	height:160px;
 	width:160px;
 	opacity:0;
@@ -124,6 +124,7 @@ body {
 	margin-right:1rem;
 	margin-bottom:1rem;
 	padding:.5rem;
+	position:relative;
 	-webkit-transition:.3s;
 	transition:.3s;
 }
@@ -138,6 +139,10 @@ body {
 	padding:.4rem .5rem;
 	display:block;
 	font-weight:bold;
+}
+.skills-i {
+	padding-left:5px;
+	font-size:.6rem;
 }
 .resume .language .language-item {
 	margin-bottom:1rem;
@@ -199,8 +204,11 @@ body {
 .resume .recent ul li {
 	line-height:1.6rem;
 }
-.resume .recent a:hover {
+.resume .recent a {
 	text-decoration:underline;
+}
+.resume .recent a:hover {
+	text-decoration:none;
 }
 .resume .previous {
 	font-size:1rem;
@@ -255,9 +263,71 @@ body {
 }
 
 @media only screen and (max-width :960px) {
+	.resume header h1 {
+		font-weight: lighter;
+		text-align: center;
+		font-size: 2.4rem;
+		letter-spacing: 3px;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+	}
+	.resume header h5 {
+		margin-bottom: .4rem;
+		text-align: center;
+		font-weight: lighter;
+		letter-spacing: 1px;
+		color: #444;
+	}
+	.resume h2 {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: lighter;
+		margin-bottom: 3rem;
+		letter-spacing: 2px;
+	}
+	.resume .education .ucsd {
+		right:-40px;
+	}
 }
-
+@media only screen and (max-width :1024px) {
+	.resume {
+		margin:0 auto;
+	}
+}
+@media only screen and (max-width :920px) {
+	.resume .education .ucsd {
+		display:none;
+	}
+}
 @media only screen and (max-width :800px) {
+	.resume header h1 {
+		font-size: 2rem;
+	}
+	.resume header h5 {
+		font-size:1rem;
+	}
+	.resume h2 {
+		font-size: 1.2rem;
+	}
+	.container.resume {
+		padding:2rem;
+	}
+	.resume .language .language-item button.advanced-expert:after {
+		width: 90%;
+	}
+	.resume .language .language-item button.advanced:after {
+		width: 75%;
+	}
+	.resume .language .language-item button.intermediate:after {
+		width: 60%;
+	}
+	.resume .language .language-item button.novice:after {
+		width: 45%;
+	}
+}
+@media only screen and (max-width :640px) {
+
 }
 
 
